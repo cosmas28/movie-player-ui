@@ -1,25 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
+import {AppContainer, HeaderWrapper, AppLink, LogoWrapper, Content, CodeWrapper} from "./styles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
+    <AppContainer>
+      <HeaderWrapper>
+        <LogoWrapper src={logo} alt="logo" />
+        <Content>
+          Edit <CodeWrapper>src/App.tsx</CodeWrapper> and save to reload.
+        </Content>
+        <AppLink
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
+        </AppLink>
+      </HeaderWrapper>
+    </AppContainer>
   );
 }
 
