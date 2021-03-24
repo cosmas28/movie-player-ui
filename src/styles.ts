@@ -1,9 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-export const AppContainer = styled.div`
-	text-align: center;
-`;
-
 export const HeaderWrapper = styled.header`
 	background-color: #282c34;
 	min-height: 100vh;

@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 
-import {AppContainer, HeaderWrapper, AppLink, LogoWrapper, Content, CodeWrapper} from "./styles";
+import {GlobalStyle} from "./globalStyles";
+
+import {HeaderWrapper, AppLink, LogoWrapper, Content, CodeWrapper} from "./styles";
 
 function App() {
   return (
-    <AppContainer>
+    <React.Fragment>
+      <GlobalStyle />
       <HeaderWrapper>
         <LogoWrapper src={logo} alt="logo" />
         <Content>
@@ -19,7 +22,7 @@ function App() {
           Learn React
         </AppLink>
       </HeaderWrapper>
-    </AppContainer>
+    </React.Fragment>
   );
 }
 
